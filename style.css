@@ -1,4 +1,4 @@
-/* Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,73 +6,125 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
   color: #333;
-  line-height: 1.6;
-  padding: 0 20px;
 }
 
-/* Hero */
-.hero {
-  position: relative;
+h1, h2, h3 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #0064A5;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0064A5;
+  position: fixed;
   width: 100%;
-  height: 400px;
-  background: url('https://nzrda.org.nz/wp-content/uploads/RDD-Profile-Pic-scaled.png') no-repeat center center;
-  background-size: cover;
+  top: 0;
+  z-index: 10;
 }
 
-.hero-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #6d9465;
+.navbar .logo img {
+  width: 120px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 1.1em;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://nzrda.org.nz/wp-content/uploads/RDD-Profile-Pic-scaled.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.hero .hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 800px;
 }
 
 .hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 3em;
 }
 
-main {
-  max-width: 800px;
-  margin: 40px auto;
+.hero .cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #0064A5;
+  color: white;
+  border-radius: 25px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-section {
-  margin-bottom: 40px;
+.hero .cta-button:hover {
+  background-color: #004c8c;
 }
 
-.highlight {
-  background-color: #e0f7f9;
-  border-left: 5px solid #007C91;
-  padding: 20px;
+/* About Section */
+.about {
+  background-color: #f7f7f7;
+  padding: 50px 20px;
+  text-align: center;
 }
 
-ul {
-  padding-left: 20px;
-  list-style: disc;
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
+.about p {
+  font-size: 1.2em;
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+.about .cta-button {
+  padding: 15px 30px;
+  background-color: #0064A5;
+  color: white;
+  border-radius: 25px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.about .cta-button:hover {
+  background-color: #004c8c;
+}
+
+/* Footer Section */
 footer {
-  text-align: center;
+  background-color: #0064A5;
   padding: 20px;
-  font-size: 0.9em;
-  color: #666;
-  background-color: #ffffff;
-}
-/* Banner Section */
-.banner {
-  background-color: #e0f7f9; /* soft teal background */
   text-align: center;
-  padding: 30px 20px;
-}
-
-.banner img {
-  max-width: 200px;
-  height: auto;
-  border-radius: 50%;
+  color: white;
 }

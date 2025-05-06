@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -11,8 +10,7 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
       <img src="https://nzrda.org.nz/wp-content/uploads/RDD-Profile-Pic-scaled.png" alt="Resident Doctors' Day Logo">
@@ -26,35 +24,51 @@
   </nav>
 
   <!-- Hero Section -->
-
   <section class="hero">
     <div class="hero-overlay">
-      <h1>Resident Doctors' Day Aotearoa</h1>
-      <p>Honouring the dedication of resident doctors across New Zealand</p>
-      <a href="events.html" class="cta-button">Explore Events</a>
+      <h1>Celebrating Resident Doctors Across New Zealand</h1>
+      <p>Join us in honoring the tireless efforts and dedication of resident doctors who contribute to the health of Aotearoa.</p>
+      <a href="events.html" class="cta-button">See Our Events</a>
     </div>
   </section>
 
   <!-- About Section -->
-
   <section class="about">
     <div class="container">
-      <h2>What is Resident Doctors' Day?</h2>
-      <p>Resident Doctors' Day is a celebration of the hard work and commitment of resident doctors who play a pivotal role in New Zealand's healthcare system.</p>
+      <h2>Why Resident Doctors' Day Matters</h2>
+      <p>Resident Doctors' Day is a vital moment for recognizing the unwavering commitment of our resident doctors. From training to on-the-ground patient care, they are the backbone of our healthcare system in New Zealand.</p>
       <a href="about.html" class="cta-button">Learn More</a>
     </div>
   </section>
 
-  <!-- Footer Section -->
+  <!-- Events Section -->
+  <section class="events">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <p>We’ve got exciting activities planned across New Zealand to celebrate Resident Doctors' Day. From hospital events to social media campaigns, there’s a way for everyone to get involved.</p>
+      <a href="events.html" class="cta-button">View Events</a>
+    </div>
+  </section>
 
+  <!-- Social Media Section -->
+  <section class="social">
+    <div class="container">
+      <h2>Share the Love</h2>
+      <p>Use the hashtag <strong>#ResidentDoctorsDayNZ</strong> to share your appreciation and experiences on social media. Show support for our amazing resident doctors!</p>
+      <div class="social-buttons">
+        <a href="https://twitter.com/intent/tweet?text=Celebrating%20Resident%20Doctors%20Day%20in%20NZ!%20Join%20the%20celebration%20using%20#ResidentDoctorsDayNZ" class="social-button twitter" target="_blank">Tweet</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fresidentdoctorsday.org.nz" class="social-button facebook" target="_blank">Share on Facebook</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 Resident Doctors' Day NZ | Supported by NZRDA</p>
   </footer>
 
   <!-- Netlify Identity Widget -->
-
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", (user) => {

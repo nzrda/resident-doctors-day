@@ -1,4 +1,18 @@
 backend:
   name: git-gateway
-  branch: main  # or 'master', depending on your repository's default branch
+  branch: main  # Change to 'master' if your GitHub repo uses that
 
+media_folder: "img/uploads"        # Where uploaded files are stored in the repo
+public_folder: "/img/uploads"      # Public path to access uploaded files
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "index.html"
+        label: "Homepage"
+        name: "homepage"
+        fields:
+          - label: "Page Content"
+            name: "body"
+            widget: "markdown"

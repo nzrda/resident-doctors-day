@@ -1,76 +1,49 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Resident Doctors' Day NZ</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Add Favicon for better branding -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
+
 <body>
-<!-- Banner Area -->
+
+<!-- Banner Area with Logo -->
 <section class="banner">
-  <img src="https://nzrda.org.nz/wp-content/uploads/RDD-Profile-Pic-scaled.png" alt="Resident Doctors' Day Logo">
+  <img src="https://nzrda.org.nz/wp-content/uploads/RDD-Profile-Pic-scaled.png" alt="Resident Doctors' Day Logo" class="banner-logo">
 </section>
 
-<!-- Hero Text Section -->
-
+<!-- Hero Section with Overlay for Text -->
 <header class="hero">
   <div class="hero-overlay">
     <h1>Resident Doctors' Day Aotearoa</h1>
     <p>Honouring the dedication of our resident doctors across New Zealand</p>
   </div>
 </header>
-  <header class="hero">
-    <div class="hero-overlay">
-      <h1>Resident Doctors' Day Aotearoa</h1>
-      <p>Honouring the dedication of our resident doctors across New Zealand</p>
-    </div>
-  </header>
 
-  <main>
-    <section class="highlight">
-      <h2>📅 When is it?</h2>
-      <p>I DONT KNOW Resident Doctors' Day is celebrated in 2025 on <strong>June 23rd</strong>.</p>
-    </section>
+<main>
+  <!-- Event Date Section -->
+  <section class="highlight">
+    <h2>📅 When is it?</h2>
+    <p>Resident Doctors' Day is celebrated in 2025 on <strong>June 23rd</strong>.</p>
+  </section>
 
-```wisp
-<section>
-  <h2>🙏 Why it Matters</h2>
-  <p>Resident doctors are essential to our healthcare system. Their tireless work, training, and compassion deserve recognition every day — and especially on this one.</p>
-</section>
+  <!-- Why it Matters Section -->
+  <section class="highlight">
+    <h2>🙏 Why it Matters</h2>
+    <p>Resident doctors are essential to our healthcare system. Their tireless work, training, and compassion deserve recognition every day — and especially on this one.</p>
+  </section>
 
-<section>
-  <h2>🎉 How to Celebrate</h2>
-  <ul>
-    <li>Send a thank-you message to a resident doctor</li>
-    <li>Share appreciation posts on social media</li>
-    <li>Host a morning tea or shout-out at your hospital</li>
-  </ul>
-</section>
+  <!-- How to Celebrate Section -->
+  <section class="highlight">
+    <h2>🎉 How to Celebrate</h2>
+    <ul>
+      <li>Send a thank-you message to a resident doctor</li>
+      <li>Share appreciation posts on social media</li>
+      <li>Host a morning tea or shout-out at your hospital</li>
+    </ul>
 
-<section>
-  <h2>📸 Share the Love</h2>
-  <p>Use the hashtag <strong>#ResidentDoctorsDayNZ</strong> to show your support online.</p>
-</section>
-```
-
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Resident Doctors' Day NZ | Supported by the NZRDA</p>
-  </footer>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
-</body>
-</html>
